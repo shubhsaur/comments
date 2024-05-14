@@ -4,7 +4,7 @@ import Comment from './Comment';
 const Comments = ({ comments, addReply }) => {
   return (
     <>
-        {comments.map(comment => (
+        {comments.map((comment) => (
                 <Comment comment={comment} key={comment.id} addReply={addReply} />
             
         ))}
